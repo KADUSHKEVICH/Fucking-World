@@ -1,0 +1,497 @@
+@font-face {
+	font-family: 'Garamond-Premier-Pro-Italic';
+	src: url('../fonts/Garamond-Premier-Pro-Italic.eot');
+	src: local('☺'), url('../fonts/Garamond-Premier-Pro-Italic.woff') format('woff'), url('../fonts/Garamond-Premier-Pro-Italic.ttf') format('truetype'), url('../fonts/Garamond-Premier-Pro-Italic.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PF Din Text Comp Pro-Thin';
+	src: url('../fonts/PFDinTextCompPro-Thin.eot');
+	src: local('☺'), url('../fonts/PFDinTextCompPro-Thin.woff') format('woff'), url('../fonts/PFDinTextCompPro-Thin.ttf') format('truetype'), url('../fonts/PFDinTextCompPro-Thin.svg') format('svg');
+	font-weight: thin;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PF Din Text Comp Pro-normal';
+	src: url('../fonts/pf-din-regular.eot');
+	src: local('☺'), url('../fonts/pf-din-regular.woff') format('woff'), url('../fonts/pf-din-regular.ttf') format('truetype'), url('../fonts/pf-din-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html{
+  	box-sizing: border-box;
+  	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.wrapper{
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* Header start */
+.header{
+	width: 100%;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px 0 65px;
+}
+
+.header__menu-logo{
+    margin-left: 18px;
+}
+
+.header__menu-list{
+    display: flex;
+}
+
+.header__menu-list-item{
+    margin: 0 18px;
+}
+
+.header__menu-link{
+    font-family: 'PF Din Text Comp Pro-normal';
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px; 
+    transition: linear 300ms;
+}
+
+.header__menu-link-active{
+    color: #EC4E67;
+	border-bottom: 1px solid #EC4E67;
+	text-transform: uppercase;
+}
+
+.header__menu-link:hover{
+    color: #EC4E67;
+}
+
+.header__map{
+    width: 100%;
+	min-height: 100%;
+	background-image: url(../images/map_bg.png);
+	background-position: center top;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Скопировал тугубо для того чтоб heigh header_map было такое же */
+
+.hrader__menu_a{
+    padding-top: 61.5%;
+    visibility: hidden;
+}
+
+.header__menu__container{
+	position: absolute;
+	left: 50%;
+	top: 87%;
+	transform: translateX(-50%);
+	width: 316px; 	
+}
+/* бесполезный кусок окончание */
+
+.header__svg-top{
+	position: absolute;
+	top: 0%;
+    right: .3%;
+}
+
+.header__top-text{
+	position: absolute;
+	top: 13.5%;
+	right: 13%;
+	color: #fff;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	z-index: 2;
+}
+
+.header__svg-top-link{
+    opacity: 1;
+}
+
+.header__svg-top-link:hover{
+	opacity: 1;
+}
+
+.header__svg-center{
+	position: absolute;
+	top: 41.5%;
+    right: 29%;
+}
+
+.header__center-text{
+	position: absolute;
+	top: 51.5%;
+	right:30.5%;
+	color: #fff;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	z-index: 2;
+}
+
+.header__svg-center-link{
+	opacity: 1;
+}
+
+.header__svg-center-link:hover{
+	opacity: 1;
+}
+
+.header__svg-bottom{
+	position: absolute;
+	left: 17.95%;
+    bottom: 17.9%;
+}
+
+.header__bottom-text{
+	position: absolute;
+	top: 66%;
+	left: 27.5%;
+	color: #fff;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	z-index: 2;
+}
+
+.header__svg-bottom-link{
+    opacity: 1;
+}
+
+.header__svg-bottom-link:hover{
+	opacity: 1;
+}
+
+/* Header end */
+
+/* Offers start */
+.offers{
+    text-align: center;
+}
+
+.offers__title{
+    font-family: 'PF Din Text Comp Pro-Thin';
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 30px 0 70px;
+}
+
+.offers__cards{
+    max-width: 1112px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers__cards:nth-child(1),
+.offers__cards:nth-child(3),
+.offers__cards:nth-child(6){
+    margin-bottom: 40px;
+}
+
+.offers__card{
+    width: 260px;
+    border: 1px solid #E4E4E4;
+    padding: 10px 30px;
+}
+
+.offers__card-image{
+    min-height: 211px;
+    display: inline-block;
+}
+
+.offers__card-subtitle{
+    font-family: 'PF Din Text Comp Pro-Thin';
+    font-size: 24px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.offers__card-price{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 175.78%;
+}
+
+/* Slider start */
+.slider{
+    margin-bottom: 85px;
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slick-dots li{
+    margin-left: 7.5px;
+}
+
+.slick-dots li button{
+    font-size: 0;
+    border: none;
+    background-color: #EC4E67;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.slick-dots li.slick-active button{
+    background-color: #C0C0C0;
+}
+/* Slider end */
+/* Offers end */
+
+/* Offers sale start */
+
+.offers__title{
+    font-family: 'PF Din Text Comp Pro-Thin';
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-left: 110px;
+    margin-bottom: 40px;
+}
+
+.offers__sale-cards{
+    text-align: center;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.offers__sale-card{
+    width: 277px;
+    border: 1px solid #E4E4E4;
+    padding: 10px 30px;
+}
+
+.offers__sale-card-image{
+    min-height: 211px;
+    display: inline-block;
+}
+
+.offers__sale-card-subtitle{
+    font-family: 'PF Din Text Comp Pro-Thin';
+    font-size: 24px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.offers__sale-card-price{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 175.78%;
+}
+
+.offers__sale-card-btn{
+    display: block;
+    width: 165px;
+    margin: 0 auto;
+    font-family: 'PF Din Text Comp Pro-Thin';
+	letter-spacing: 1px;
+	font-size: 20px;
+	line-height: 23px;
+    color: #E94E67;
+    text-transform: uppercase;
+    padding: 12px 40px 12px 0;
+    border: 1px solid #E94E67;
+    position: relative;
+    transition: linear 200ms;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.offers__sale-card-btn::after{
+    content: "";
+    position: absolute;
+    background: url(../images/icon/arrow_red.svg) center center / 90% no-repeat;
+	width: 18px;
+	height: 18px;
+	top: 29%;
+	right: 20px;
+	transition: linear 200ms;
+}
+
+.offers__sale-card-btn:hover{
+	background-color: #E94E67;
+	color: #fff;
+	border-color: #E94E67;
+}
+
+.offers__sale-card-btn:hover::after{
+	background: url(../images/icon/arrow_white.svg) center center / 90% no-repeat;
+}
+
+.offers__sale-inner-btn{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    font-family: 'PF Din Text Comp Pro-Thin';
+	letter-spacing: 1px;
+	font-size: 20px;
+	line-height: 23px;
+    color: #E94E67;
+    text-transform: uppercase;
+    padding: 12px 40px 12px 20px;
+    border: 1px solid #E94E67;
+    position: relative;
+    transition: linear 200ms;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.offers__sale-inner-btn::after{
+    content: "";
+    position: absolute;
+    background: url(../images/icon/arrow_red.svg) center center / 90% no-repeat;
+	width: 18px;
+	height: 18px;
+	top: 29%;
+	right: 20px;
+	transition: linear 200ms;
+}
+
+.offers__sale-inner-btn:hover{
+	background-color: #E94E67;
+	color: #fff;
+	border-color: #E94E67;
+}
+
+.offers__sale-inner-btn:hover::after{
+	background: url(../images/icon/arrow_white.svg) center center / 90% no-repeat;
+}
+
+.offers__slider-container{
+    max-width: 1111px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Slider offers sale start */
+
+.offers__sale-slider{
+    position: relative;
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    font-size: 0;
+    background: none;
+    z-index: 3;
+    outline: none;
+}
+
+.slick-next{
+    right: 60px;
+    background: url(../images/icon/slider_arrow_next.svg) center center / 100% no-repeat;
+    width: 18px;
+    height: 32px;
+}
+
+.slick-prev{
+    left: 60px;
+    background: url(../images/icon/slider_arrow_prev.svg) center center / 100% no-repeat;
+    width: 18px;
+    height: 32px;
+}
+
+/* Slider offers sale end */
+/* Offers sale end */
+
+/* Additional menu start */
+.additional__menu{
+	background-color: #F3F3F3;
+	height: 320px;
+	margin-bottom: 50px;
+}
+
+.additional__menu_container{
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 0 70px 0;
+}
+
+.additional__menu-item{
+	text-align: center;
+}
+
+.additional__menu-title{
+	font-family: 'PF Din Text Comp Pro-Thin';
+	font-size: 34px;
+	line-height: 46px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+}
+/* Additional menu end */
+
+/* Footer start */
+.footer__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.footer__menu-items{
+	width: 350px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__menu__hidden{
+	opacity: 0;
+}
+
+.footer__menu-link{
+	font-family: 'PF Din Text Comp Pro-normal';
+	color: #B4B4B4;
+	transition: linear 300ms;
+	letter-spacing: 1.5px; 
+	transition: linear 200ms; 
+}
+
+.footer__menu-link-active{
+	color: #000;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
+	text-transform: uppercase;
+}
+
+.footer__menu-link:hover{
+	color: #000;
+}
+/* Footer end */
